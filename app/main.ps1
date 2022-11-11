@@ -65,7 +65,7 @@ while ($true) {
 
   # 実行開始
 
-  #git init
+  # git init # コメントアウト (勝手に初期化するのは嫌かな???)
 
   $running_datetime = $start_datetime
 
@@ -88,7 +88,4 @@ while ($true) {
     # 次の日に移動
     $running_datetime = $running_datetime.AddDays(1)
   }
-
-
 }
-
