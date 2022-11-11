@@ -63,6 +63,32 @@ while ($true) {
     continue
   }
 
+  # 実行開始
+
+  git init
+
+  $running_datetime = $start_datetime
+
+  while ($running_datetime -lt $current_datetime) {
+    # 一日のコミット回数を取得
+    $commit_count = Get-Random -Minimum $commit_count_min -Maximum $commit_count_max
+
+    # 一日のコミット回数分ループ
+    for ($i = 0; $i -lt $commit_count; $i++) {
+      # コミットするファイルを作成
+      $file_name = "$running_datetime.txt"
+      $file_path = "./$file_name"
+      $file_content = "Hello, World!"
+      New-Item -Path $file_path -ItemType File -Value $file_content
+
+      # コミット
+      git add .
+      git commit -m "add $file_name" --date="$running_datetime"
+    }
+
+    # 次の日に移動
+    $running_datetime = $running_datetime.AddDays(1)
+  }
 
 
 }
