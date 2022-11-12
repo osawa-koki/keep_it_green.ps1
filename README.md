@@ -46,9 +46,16 @@ git push -u origin main
 もし、悟りを開いて削除したかったらこれだ！
 
 ```shell
+# Gitリポジトリを削除
 cd ../
 rm -rf app/.git
+
 # GitHub上でも削除してね♪
+
+# Dockerコンテナ一覧を表示
+docker ps -a
+# Dockerコンテナを削除
+docker rm <コンテナID>
 ```
 
 ## 03. 自分なりにカスタマイズしろ
