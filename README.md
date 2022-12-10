@@ -69,3 +69,6 @@ docker rm <コンテナID>
 スクリプトを実行しなおせば反映される！
 
 以上だ!!  
+
+## 参考文献
+- [わずか5分で最強のzsh環境を構築したいか？😎](https://github.com/yamato0811/5min-zsh-env)
