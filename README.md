@@ -1,7 +1,7 @@
-# 人工芝で草を生やせ
+# GitHubに人工芝を生やせ！
 
-![サンプル画像](/dev/img/before.png)  
-![サンプル画像](/dev/img/after.png)  
+![サンプル画像](./dev/img/before.png)  
+![サンプル画像](./dev/img/after.png)  
 
 ん？短時間でGitHubの見た目をきれいにしたい？  
 じゃあたった15分で最強のGitHubプロフィールを人工芝で緑豊にする方法教えてやるよぉっ！！！
